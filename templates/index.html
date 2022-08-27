@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1 class="text-center"> Face detection in Falsk </h1>
+  <div id="parent" class="text-center">
+    <button onclick="openCamera()"> Open Camera </button>
+
+  </div>
+
+<script>
+  function openCamera()
+  {
+    let parent = document.getElementById("parent");
+    parent.innerHTML = "<img src='{{ url_for('video')}}'/>";
+  }
+</script>
+{% endblock %}
