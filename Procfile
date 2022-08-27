@@ -1,1 +1,1 @@
-web: guncorn app:app
+web: python app.py runserver
